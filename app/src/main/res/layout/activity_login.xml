@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".Login"
+    android:background="@drawable/fac">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/username"
+            android:background="#ffffff"
+            android:hint="@string/username"
+            android:maxLength="15"
+            android:textColorHint="#FF0F0F0F">
+
+        </EditText>
+
+ <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+
+        android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/password"
+            app:tint_color="#00B0FF"
+            app:drawable_show="@drawable/ic_visibility_on"
+            app:drawable_hide="@drawable/ic_visibility_off"
+            android:drawableLeft="@drawable/password"
+            android:textColorHint="#FF0F0F0F">
+
+ </com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/login"
+            android:textColor="#F6F6F6">
+
+        </Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textColor="#ffffff"
+                android:paddingLeft="95dp"
+                android:text="@string/not_registered"/>
+
+            <TextView
+                android:id="@+id/textview_register"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="#04ea00"
+                android:text="@string/register"/>
+
+
+    </LinearLayout>
+<!--    <TextView-->
+<!--    android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textAppearance="?android:attr/textAppearanceLarge"-->
+<!--            android:id="@+id/textView_attemt_Count"-->
+<!--            android:layout_marginBottom="5dp"/>-->
+
+   </LinearLayout>
+
+
+</RelativeLayout>

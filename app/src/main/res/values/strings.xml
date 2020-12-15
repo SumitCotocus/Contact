@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Contact</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="not_registered">Not Registered</string>
+    <string name="register">Register</string>
+</resources>
